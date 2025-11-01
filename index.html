@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD231 assignment">
+    <meta name="author" content="Emmanuel Inelus">
+    <title>Emmanuel Inelus | Home</title>
+    <link rel="stylesheet" href="styles/course.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
-    Emmanuel Inelus 
+    <header>
+        <button class="menu" id="menuButton">☰</button>
+
+        <div class="logo">
+            <img src="images/wolf_logo.svg" alt="Site logo" class="logo">
+            <span class="site">Emmanuel Inelus</span>
+        </div>
+
+        <nav id="mainNav">
+            <a href="index.html" class="active">Home</a>
+            <a href="chamber/index.html">Chamber Project</a>
+            <a href="final/index.html">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>My name is Emmanuel Inelus. I am 23 years old, almost 24.</p>
+            <p>I am from Haiti but I currently live in the Dominican Republic.</p>
+            <p>I love to read and listen to music. I am also learning piano.</p>
+            <p> I would like to become a data analyst one day.</p>
+        </section>
+
+        <section class="student-photo">
+    <h2>Student Photo</h2>
+    <img src="images/emmanuel.png" alt="Emmanuel">
+</section>
+
+        <section class="web-courses">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="course-buttons">
+                <button id="allBtn">All</button>
+                <button id="cseBtn">CSE</button>
+                <button id="wddBtn">WDD</button>
+            </div>
+
+            <div id="courseContainer" class="courses"></div>
+
+            <p class="total">
+                The total credits for the courses listed above is 
+                <span id="totalCredits">0</span>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" target="" aria-label="LinkedIn">
+                <img src="images/linkedin-svgrepo-com.svg" alt="LinkedIn log">
+            </a>
+            <a href="#" target="" aria-label="Twitter">
+                <img src="images/twitter-svgrepo-com.svg" alt="logo">
+            </a>
+        </div>
+
+        <p>&copy; <span id="currentyear"></span> | Emmanuel Inelus | Port-au-Prince, Haiti</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
