@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Directory | Port-au-Prince Chamber of Commerce</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/chamber.css">
+  <script src="js/main.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="branding">
+    <img src="images/logo.png" alt="Chamber Logo">
+    <h1>Member Directory</h1>
+  </div>
+  <nav>
+    <button id="menu-toggle">☰</button>
+    <ul id="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a class="active" href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="view-toggle">
+    <button id="gridView">Grid View</button>
+    <button id="listView">List View</button>
+  </div>
+
+  <section id="memberContainer" class="grid"></section>
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Port-au-Prince Chamber of Commerce</p>
+  <p>Port-au-prince | <strong>Emmanuel Inelus</strong></p>
+  <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>

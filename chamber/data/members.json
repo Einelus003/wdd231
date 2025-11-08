@@ -1,0 +1,28 @@
+{
+  "members": [
+    {
+      "name": "Port-au-Prince Fitness",
+      "address": "2788 Rue Panamericaine, Port-au-Prince, Haiti",
+      "phone": "509 333 2525",
+      "url": "https://papfitness.ht",
+      "image": "papfitness.jpg",
+      "level": 2
+    },
+    {
+      "name": "Port-au-Prince Café",
+      "address": "2889 Tour 2004, Rue St Laurent, Port-au-Prince, Haiti",
+      "phone": "509 366 2852",
+      "url": "https://papcafe.ht",
+      "image": "papcafe.jpg",
+      "level": 1
+    },
+    {
+      "name": "Port-au-Prince Bijoux",
+      "address": "2354 7th Street, Boyer, Port-au-Prince, Haiti",
+      "phone": "559 777 8888",
+      "url": "https://papbijoux.ht",
+      "image": "papbijoux.jpg",
+      "level": 3
+    }
+  ]
+}
