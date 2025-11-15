@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Port-au-Prince Chamber of Commerce</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/chamber.css">
+  <script src="js/main.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+  <script src="scripts/spotlight.js" defer></script>
+</head>
+
+<body>
+<header>
+  <div class="">
+    <img src="images/wolf_logo.svg" alt="Logo">
+    <h1>Port-au-Prince Chamber of Commerce</h1>
+  </div>
+
+  <nav>
+    <button id="menu">☰</button>
+    <ul id="nav">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<main>
+
+  
+  <section class="hero">
+    <img src="images/business6.png" alt="">
+    <div class="hero-text">
+      <h2>building a stronger Business comunity</h2>
+      <p>Supporting growth in Port-au-Prince.</p>
+      <a href="join.html" class="button">Join the Chamber</a>
+    </div>
+  </section>
+
+  
+  <section class="events">
+    <h3>Upcoming Events</h3>
+    <ul>
+      <li><strong>Business Networking</strong> February 9</li>
+      <li><strong>Small Business Work day </strong> February 22</li>
+      <li><strong>Community Market Day</strong> March 1</li>
+    </ul>
+  </section>
+
+  
+  <section class="weather">
+    <h3>Current Weather</h3>
+    <p>Temperature: <span id="current"></span></p>
+    <figure>
+      <img id="weather-icon" src="" alt="">
+      <figcaption id="weather"></figcaption>
+    </figure>
+
+    <h3>3-Day Forecast</h3>
+    <ul id="forecast"></ul>
+  </section>
+
+  <section class="spotlight">
+    <h3>Featured Members</h3>
+    <div id="spotlight" class="spotlight-grid"></div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Port-au-Prince Chamber of Commerce</p>
+  <p>Port-au-Prince | <strong>Emmanuel Inelus</strong></p>
+  <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>

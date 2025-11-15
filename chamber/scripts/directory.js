@@ -29,8 +29,3 @@ document.getElementById("listView").addEventListener("click", () => {
   container.classList.remove("grid");
 });
 
-
-document.getElementById("year").textContent = new Date().getFullYear();
-
-const lastMod = new Date(document.lastModified);
-document.getElementById("lastModified").textContent = lastMod.toLocaleString();
