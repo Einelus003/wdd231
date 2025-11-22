@@ -158,3 +158,49 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+dialog#course-details {
+  border: none;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 450px;
+  width: 90%;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+dialog#course-details::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#closeModal {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .menu-button {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    background: #444;
+    top: 60px;
+    right: 0;
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+}

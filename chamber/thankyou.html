@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/chamber.css">
+  <script defer>
+    const data = new URLSearchParams(window.location.search);
+
+    window.onload = () => {
+      document.getElementById("name").textContent =
+        data.get("first") + " " + data.get("last");
+
+      document.getElementById("email").textContent = data.get("email");
+      document.getElementById("phone").textContent = data.get("phone");
+      document.getElementById("business").textContent = data.get("business");
+      document.getElementById("date").textContent = data.get("timestamp");
+    }
+  </script>
+</head>
+
+<body>
+<header>
+  <h1>Port-au-Prince Chamber of Commerce</h1>
+</header>
+
+<main style="padding: 2rem; text-align:center;">
+
+  <h2> Thank You for Joining!</h2>
+  <p>We  received your application.</p>
+
+  <div style="max-width:500px;margin:auto;text-align:left;background:white;padding:1.5rem;border-radius:10px;">
+
+    <p><strong>Name:</strong> <span id="name"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Phone:</strong> <span id="phone"></span></p>
+    <p><strong>Business:</strong> <span id="business"></span></p>
+    <p><strong>Submitted on:</strong> <span id="date"></span></p>
+
+  </div>
+
+</main>
+
+<footer style="text-align:center;padding:1rem;">
+  &copy; <span id="year"></span> Port-au-Prince Chamber of Commerce
+</footer>
+</body>
+</html>

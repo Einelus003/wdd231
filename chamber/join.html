@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join | Port-au-Prince Chamber of Commerce</title>
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/chamber.css">
+  <link rel="stylesheet" href="styles/join.css">
+
+  <script src="js/main.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+<header>
+  <div class="branding">
+    <img src="images/wolf_logo.svg" alt="Logo">
+    <h1>Port-au-Prince Chamber of Commerce</h1>
+  </div>
+
+  <nav>
+    <button id="menu-toggle">☰</button>
+    <ul id="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a class="active" href="join.html">Join</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Join the Chamber</h2>
+
+  <section class="join-container">
+
+    
+    <form method="get" action="thankyou.html">
+
+      <label>
+        First Name
+        <input type="text"
+               name="firstName"
+               title="Enter your first name"
+               autocomplete="given-name"
+               required>
+      </label>
+
+      <label>
+        Last Name
+        <input type="text"
+               name="lastName"
+               title="Enter your last name"
+               autocomplete="family-name"
+               required>
+      </label>
+
+      <label>
+        Organizational Title
+        <input type="text"
+               name="orgTitle"
+               title="Enter your organizationa title"
+               autocomplete="organization-title"
+               pattern="[A-Za-z\- ]{7,}">
+      </label>
+
+      <label>
+        Email
+        <input type="email"
+               name="email"
+               title="Enter your email address"
+               placeholder="example@email.com"
+               autocomplete="email"
+               required>
+      </label>
+
+      <label>
+        Mobile Phone
+        <input type="tel"
+               name="phone"
+               title="Enter your phone number"
+               autocomplete="tel"
+               required>
+      </label>
+
+      <label>
+        Business
+        <input type="text"
+               name="organization"
+               title="Enter your business name"
+               autocomplete="organization"
+               required>
+      </label>
+
+      <label>
+        Membership Level
+        <select name="membership" title="Select a membership level" required>
+          <option value="">Select level</option>
+          <option value="np">NP Membership/Free</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+
+      <label>
+        Business Description
+        <textarea name="description"
+                  title=" your organization"
+                  rows="4"></textarea>
+      </label>
+
+   
+      <input type="hidden" name="timestamp" id="timestamp">
+
+      <input type="submit" value="Join the Chamber">
+
+    </form>
+
+  
+    <div class="membership-cards">
+
+      <div class="card">
+        <h3>NP Membership</h3>
+        <p>NonProfit Organizations</p>
+        <a onclick="openModal('npModal')">View Benefits</a>
+      </div>
+
+      <div class="card">
+        <h3>Bronze Membership</h3>
+        <p>Low cost start plan</p>
+        <a onclick="openModal('bronzeModal')">View Benefits</a>
+      </div>
+
+      <div class="card">
+        <h3>Silver Membership</h3>
+        <p>medium  businesses</p>
+        <a onclick="openModal('silverModal')">View Benefits</a>
+      </div>
+
+      <div class="card">
+        <h3>Gold Membership</h3>
+        <p>Full access</p>
+        <a onclick="openModal('goldModal')">View Benefits</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+
+<div class="modal" id="npModal">
+  <div class="modal-content">
+    <h3>NP Membership Benefits</h3>
+    <p>No fee, community support, nonprofit.</p>
+    <button onclick="closeModal('npModal')">Close</button>
+  </div>
+</div>
+
+<div class="modal" id="bronzeModal">
+  <div class="modal-content">
+    <h3>Bronze Membership Benefits</h3>
+    <p>Event discounts, newsletters.</p>
+    <button onclick="closeModal('bronzeModal')">Close</button>
+  </div>
+</div>
+
+<div class="modal" id="silverModal">
+  <div class="modal-content">
+    <h3>Silver Membership Benefits</h3>
+    <p>spotlight ads, training sessions, premium events.</p>
+    <button onclick="closeModal('silverModal')">Close</button>
+  </div>
+</div>
+
+<div class="modal" id="goldModal">
+  <div class="modal-content">
+    <h3>Gold Membership Benefits</h3>
+    <p>homepage spotlight, VIP events, top placement.</p>
+    <button onclick="closeModal('goldModal')">Close</button>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; <span id="year"></span> Port-au-Prince Chamber of Commerce</p>
+  <p>Port-au-Prince | <strong>Emmanuel Inelus</strong></p>
+  <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>
