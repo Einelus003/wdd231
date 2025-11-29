@@ -141,3 +141,77 @@ img {
     color: white;
   }
 }
+
+.discover-main {
+  padding: 1rem;
+}
+
+.visit-message {
+  background: #e0f7fa;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid #024;
+  font-weight: bold;
+}
+
+.discover-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+
+.discover-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.discover-card img {
+  width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 640px) {
+  .discover-grid {
+    grid-template-areas:
+      "area1"
+      "area2"
+      "area3"
+      "area4"
+      "area5"
+      "area6"
+      "area7"
+      "area8";
+  }
+}
+
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "area1 area2"
+      "area3 area4"
+      "area5 area6"
+      "area7 area8";
+  }
+}
+
+
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "area1 area2 area3 area4"
+      "area5 area6 area7 area8";
+  }
+
+
+  .discover-card img:hover {
+    filter: brightness(1.2) drop-shadow(0 0 8px #024);
+    transform: scale(1.05);
+    transition: 0.3s ease;
+  }
+}

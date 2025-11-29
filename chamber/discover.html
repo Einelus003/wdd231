@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Discover | Port-au-Prince Chamber</title>
+
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/chamber.css">
+
+  
+  <script src="scripts/main.js" defer></script>
+
+
+  <script src="scripts/discover.js" type="module" defer></script>
+</head>
+<body>
+  <header>
+    <div class="branding">
+      <img src="images/wolf_logo.svg" alt="Logo">
+      <h1>Port-au-Prince Chamber of Commerce</h1>
+    </div>
+
+    <nav>
+      <button id="menu-toggle">☰</button>
+      <ul id="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="discover-main">
+  
+    <section id="visit-message" class="visit-message" aria-live="polite"></section>
+
+    
+    <section id="discover-grid" class="discover-grid" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Port-au-Prince Chamber of Commerce</p>
+    <p>Port-au-Prince | <strong>Emmanuel Inelus</strong></p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
