@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="HOPE Medical Center" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOPE Medical Center — Compassionate care</title>
+
+
+  <meta property="og:title" content="HOPE Medical Center" />
+  <meta property="og:description" content="" />
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/hope.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="brand">HOPE Medical Center</h1>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="./index.html">Home</a>
+        <a href="./locations.html">Locations</a>
+        <a href="./providers.html">Providers</a>
+        <button id="openScheduleBtn" class="btn btn-primary">Schedule</button>
+      </nav>
+    </div>
+    <p class="tagline">Compassionate care for every person .</p>
+  </header>
+
+  <main>
+    <section class="section section--hero">
+      <div class="hero__content">
+        <h2>Welcome to HOPE</h2>
+        <p>We bring quality healthcare to communities across Haiti. Explore our centers, meet our providers, and request your first appointment.</p>
+        <div class="prefs">
+          <label for="preferredLocation"><strong>Preferred location:</strong></label>
+          <select id="preferredLocation" aria-label="Preferred location">
+            <option value="">Select a location</option>
+          </select>
+          <button id="savePrefsBtn" class="btn btn-secondary">Save preference</button>
+        </div>
+      </div>
+      <figure class="hero__image">
+        <img src="images/medical.jpg"
+             alt="Friendly medical staff greeting a patient"
+             loading="lazy" width="1200" height="800" />
+        <figcaption>Our team is here to help you feel at ease.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section">
+      <h2>Hours & walk-ins</h2>
+      <ul class="list">
+        <li><strong>General Practitioner:</strong> 8:00 AM — 6:00 PM, walk-ins accepted.</li>
+        <li><strong>Specialty exams:</strong> Appointment required.</li>
+        <li><strong>Insurances accepted:</strong> Maphre, ONA, SID, First Care Insurance, NOWA, Worker's Benefits, Transmed, and all government-issued insurance.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Find a center near you</h2>
+      <div id="homeCenters" class="grid grid--locations" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 HOPE Medical Center</p>
+    <p><a href="https://www.loom.com/share/c11ed58f69004371a26671b2b49a0834" target="_blank" rel="noopener">View video demonstration</a></p>
+  </footer>
+
+ 
+  <div id="scheduleModal" class="modal" aria-hidden="true" aria-labelledby="modalTitle" role="dialog">
+    <div class="modal__dialog" role="document">
+      <button class="modal__close" aria-label="Close schedule form" id="closeScheduleBtn">&times;</button>
+      <h3 id="modalTitle">Request an appointment</h3>
+      <p>First-time patient? Please Submit your information and we will  call you back to schedule.</p>
+      <form id="scheduleForm" action="./form-action.html" method="GET" novalidate>
+        <div class="form-row">
+          <label for="patientName"><strong>Name</strong></label>
+          <input id="patientName" name="patientName" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="dob"><strong>Date of birth</strong></label>
+          <input id="dob" name="dob" type="date" required />
+        </div>
+        <div class="form-row">
+          <label for="address"><strong>Address</strong></label>
+          <input id="address" name="address" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="insuranceName"><strong>Insurance name</strong></label>
+          <input id="insuranceName" name="insuranceName" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="insuranceId"><strong>Insurance ID</strong></label>
+          <input id="insuranceId" name="insuranceId" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="reason"><strong>Reason for visit</strong></label>
+          <textarea id="reason" name="reason" rows="3" required></textarea>
+        </div>
+        <div class="form-row">
+          <label for="preferredCenter"><strong>Preferred center</strong></label>
+          <select id="preferredCenter" name="preferredCenter" required></select>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="btn btn-primary">Submit request</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
+

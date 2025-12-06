@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="HOPE Medical Center" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Providers — HOPE Medical Center</title>
+
+  <meta property="og:title" content="HOPE Medical Center Providers" />
+  <meta property="og:description" content="." />
+
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/hope.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="brand">HOPE Medical Center</h1>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="./index.html">Home</a>
+        <a href="./locations.html">Locations</a>
+        <a href="./providers.html" aria-current="page">Providers</a>
+        <button id="openScheduleBtn" class="btn btn-primary">Schedule</button>
+      </nav>
+    </div>
+    <p class="tagline">Choose the right provider, at the right place.</p>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>Providers directory</h2>
+
+      <div class="filters">
+        <label for="specialtyFilter"><strong>Filter by specialty:</strong></label>
+        <select id="specialtyFilter" aria-label="Filter by specialty">
+          <option value="">All specialties</option>
+        </select>
+
+        <label for="locationFilter"><strong>Filter by location:</strong></label>
+        <select id="locationFilter" aria-label="Filter by location">
+          <option value="">All locations</option>
+        </select>
+
+        <button id="clearFiltersBtn" class="btn btn-secondary">Clear filters</button>
+      </div>
+
+      <div id="providersGrid" class="grid grid--providers" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 HOPE Medical Center</p>
+    <p><a href="https://www.loom.com/share/c11ed58f69004371a26671b2b49a0834" target="_blank" rel="noopener">View video demonstration </a></p>
+  </footer>
+
+  <div id="scheduleModal" class="modal" aria-hidden="true" aria-labelledby="modalTitle" role="dialog">
+    <div class="modal__dialog" role="document">
+      <button class="modal__close" aria-label="Close schedule form" id="closeScheduleBtn">&times;</button>
+      <h3 id="modalTitle">Request an appointment</h3>
+      <form id="scheduleForm" action="./form-action.html" method="GET" novalidate>
+        <div class="form-row">
+          <label for="patientName"><strong>Name</strong></label>
+          <input id="patientName" name="patientName" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="dob"><strong>Date of birth</strong></label>
+          <input id="dob" name="dob" type="date" required />
+        </div>
+        <div class="form-row">
+          <label for="address"><strong>Address</strong></label>
+          <input id="address" name="address" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="insuranceName"><strong>Insurance name</strong></label>
+          <input id="insuranceName" name="insuranceName" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="insuranceId"><strong>Insurance ID</strong></label>
+          <input id="insuranceId" name="insuranceId" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="reason"><strong>Reason for visit</strong></label>
+          <textarea id="reason" name="reason" rows="3" required></textarea>
+        </div>
+        <div class="form-row">
+          <label for="preferredCenter"><strong>Preferred center</strong></label>
+          <select id="preferredCenter" name="preferredCenter" required></select>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="btn btn-primary">Submit request</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="./scripts/providers.js"></script>
+</body>
+</html>

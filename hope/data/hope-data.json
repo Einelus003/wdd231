@@ -1,0 +1,59 @@
+{
+  "centers": [
+    {
+      "id": "pap",
+      "name": "Port-au-Prince HOPE Medical Center (Corporate)",
+      "address": "Rue Monkope #52, Port-au-Prince, Haiti",
+      "note": "Corporate office "
+    },
+    { "id": "cap", "name": "Cap HOPE Medical Center", "address": "Rue St Honore #26, Cap-Haïtien, Haiti" },
+    { "id": "las", "name": "Lascahobas HOPE Medical Center", "address": "Route 59, Lakou #50, Lascahobas, Haiti" },
+    { "id": "jac", "name": "Jacmel HOPE Medical Center", "address": "1150 Rue Medical, Jacmel, Haiti" },
+    { "id": "gon", "name": "Gonaves HOPE Medical Center", "address": "5588 Ti Zile #7, Gonaves Island, Haiti" }
+  ],
+  "doctors": [
+    { "name": "Jean Francois", "specialty": "Orthopedics", "locations": ["pap", "cap", "jac"] },
+    { "name": "Robert Badinter", "specialty": "Orthopedics", "locations": ["pap", "las"] },
+    { "name": "John Marc", "specialty": "Orthopedics", "locations": ["pap", "gon"] },
+    { "name": "Marc Aurele", "specialty": "Orthopedics", "locations": ["pap"] },
+    { "name": "Christophe Lavoisier", "specialty": "Orthopedics", "locations": ["pap", "cap"] },
+
+    { "name": "Manuel Contreras", "specialty": "Emergency Medicine", "locations": ["pap", "cap", "gon"] },
+    { "name": "Pablo Duarte", "specialty": "Emergency Medicine", "locations": ["pap", "jac"] },
+    { "name": "Esquivel Loco", "specialty": "Emergency Medicine", "locations": ["pap"] },
+    { "name": "Pascal Trunt", "specialty": "Emergency Medicine", "locations": ["pap", "las"] },
+    { "name": "Rene Denise", "specialty": "Emergency Medicine", "locations": ["pap", "cap"] },
+
+    { "name": "Suzie Pasquet", "specialty": "General Surgery", "locations": ["pap", "jac"] },
+    { "name": "Amanda Charles", "specialty": "General Surgery", "locations": ["pap", "cap"] },
+    { "name": "Charles Xavier", "specialty": "General Surgery", "locations": ["pap"] },
+    { "name": "Luckson Charles", "specialty": "General Surgery", "locations": ["pap", "gon"] },
+
+    { "name": "Sojah Mertveille", "specialty": "Internal Medicine", "locations": ["pap", "las"] },
+    { "name": "Melissandre Tarah", "specialty": "Internal Medicine", "locations": ["pap", "cap", "jac"] },
+    { "name": "John Snow", "specialty": "Internal Medicine", "locations": ["pap"] },
+    { "name": "Ricky Gervais", "specialty": "Internal Medicine", "locations": ["pap", "gon"] },
+    { "name": "Obama Kantounou", "specialty": "Internal Medicine", "locations": ["pap", "cap"] },
+    { "name": "Frantz Ernst", "specialty": "Internal Medicine", "locations": ["pap", "jac"] },
+
+    { "name": "Norma Christine", "specialty": "Urology", "locations": ["pap", "cap"] },
+    { "name": "Kelly Grant", "specialty": "Urology", "locations": ["pap", "las"] },
+
+    { "name": "Sanchezx Asley", "specialty": "Dermatology", "locations": ["pap", "jac"] },
+
+    { "name": "Sarah Novano", "specialty": "General Practitioner", "locations": ["pap", "cap", "las", "jac", "gon"] },
+    { "name": "Emmeline Michel", "specialty": "General Practitioner", "locations": ["pap", "cap"] },
+    { "name": "Hanks Tom Holland", "specialty": "General Practitioner", "locations": ["pap", "las"] },
+    { "name": "Jennifer Berenice", "specialty": "General Practitioner", "locations": ["pap", "jac", "gon"] },
+    { "name": "Jovenel Patrick", "specialty": "General Practitioner", "locations": ["pap", "cap"] },
+    { "name": "Samuel Atonzo", "specialty": "General Practitioner", "locations": ["pap", "cap", "gon"] },
+    { "name": "Jeff Kaan", "specialty": "General Practitioner", "locations": ["pap", "las"] },
+    { "name": "Sam Atman", "specialty": "General Practitioner", "locations": ["pap", "jac"] },
+    { "name": "Phamtom Black", "specialty": "General Practitioner", "locations": ["pap", "gon"] },
+    { "name": "Huster Mercure", "specialty": "General Practitioner", "locations": ["pap", "cap", "las"] }
+  ],
+  "insurances": [
+    "Maphre", "ONA", "SID", "First Care Insurance", "NOWA", "Worker's Benefits", "Transmed", "Government-issued insurance"
+  ],
+  "hours": { "gpOpen": "08:00", "gpClose": "18:00", "specialtyByAppt": true, "walkInsPrimaryCare": true }
+}

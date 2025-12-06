@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="HOPE Medical Center" />
+  <meta name="description" content="Appointment request confirmation page." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appointment Request — Submitted</title>
+</head>
+<body>
+  <h1>Thanks! Your request has been submitted.</h1>
+  <p>We will call you back to schedule. Here is what you submitted:</p>
+  <div id="submittedData"></div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const container = document.getElementById('submittedData');
+    const fields = [
+      'patientName', 'dob', 'address',
+      'insuranceName', 'insuranceId', 'reason', 'preferredCenter'
+    ];
+    container.innerHTML = '<ul>' + fields.map(f => `<li><strong>${f}:</strong> ${params.get(f) || ''}</li>`).join('') + '</ul>';
+  </script>
+</body>
+</html>
